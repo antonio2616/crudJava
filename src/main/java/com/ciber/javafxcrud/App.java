@@ -14,6 +14,7 @@ import java.io.IOException;
  */
 public class App extends Application {
 
+    //aqui se inicializa la base de datos
     private static Scene scene;
     private EstudiantesController eControl = new EstudiantesController();
     @Override
