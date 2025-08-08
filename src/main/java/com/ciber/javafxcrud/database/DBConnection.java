@@ -22,9 +22,9 @@ public class DBConnection {
             try {
                 if (this.getCon() == null || this.getCon().isClosed()) {
                     try {
-                        String url = "jdbc:mysql://localhost/student_list";     
+                        String url = "jdbc:mysql://192.168.1.94/student_list";     
                         Class.forName("com.mysql.cj.jdbc.Driver"); 
-                        setCon(DriverManager.getConnection(url, "root", "root"));
+                        setCon(DriverManager.getConnection(url, "root_remoto", "rootremototest"));
 //                        System.out.println("hecho");
                                 
                     } catch (Exception e) {
